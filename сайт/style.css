@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(179, 72, 174);
+}
+
+.headerPosition{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.blogName{
+    flex: 50%;
+    color: bisque;
+    justify-content: center;
+}
+.logo{
+    flex: 33%;
+}
+
+footer{
+    background-color: rgb(86, 20, 82);
+}
+
+.container{
+    padding: 30px 25px;
+}
+
+.footerColums {
+    display: flex;
+}
+
+.footerColum {
+    flex: 50%;
+    margin: 10px;
+}
+
+.footerColum h3, p, a{
+    color: rgb(202, 19, 212);
+}
+
+small{
+    color: rgb(227, 40, 174);
+}
+
+main{
+    padding: 10px;
+    background-color: rgb(255, 135, 205);
+}
+
+.post{
+    background-color: rgb(224, 148, 231);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.post img{
+    margin: 20px;
+}
+
+
+
+#menu1{
+    position:relative;
+    display:block;
+    width:100%;
+    height: auto;
+    z-index: 10;
+}
+
+#menu ul{
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+#menu1 > ul::after{
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: " ";
+}
+
+#menu1 ul li{
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+#menu1 ul li a{
+    display: block;
+    padding: 9px 25px 0px 25px;
+    font-size: 14px;
+    line-height: 1.3en;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 36px;
+    color: white;
+}
+
+#menu1 ul li ul {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    display: none;
+    width: 200px;
+    background-color: rgb(178, 44, 205);
+}
+
+#menu1 ul li:hover ul{
+    display: block;
+}
+
+#menu1 ul li:hover{
+    background-color: rgb(107, 16, 121);
+}
+
+#menu1 ul li ul li {
+    float: none;
+    width: 100%;
+}
+
+#menu1 ul li ul li a {
+    display: block;
+    text-transform: none;
+    height: auto;
+    padding: 7px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    color: azure;
+}
+
+#menu1 ul li ul li:first-child a{
+    border-top: 0px;
+}
+
+.carousele{
+    margin: 10px;
+}
+
+.carousele div img{
+    width: 100%;
+}
